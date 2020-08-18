@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, user-scalable=no">
+  <title>Pokedex</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="shortcut icon" href="favicon.png" type="image/x-icon">
+  <link href='https://cdn.jsdelivr.net/npm/boxicons@2.0.5/css/boxicons.min.css' rel='stylesheet'>
+</head>
+<body>
+  
+  <div class="pokedexContainer">
+    <div class="pokedexContainerTop">
+      <div class="navbarTall">
+        <div class="navbarTall__btn--big"></div>
+        <div class="navbarTall__btn"></div>
+        <div class="navbarTall__btn"></div>
+        <div class="navbarTall__btn"></div>
+      </div>
+      <div class="navbar"></div>
+      <div class="screen">
+        <div class="screen--blue">
+          <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/25.png" alt="Pokemon" id="">
+          <div class="datos">
+            <span>Name:</span>
+            <span>Type:</span>
+            <span>Hp:</span>
+            <span>Attack:</span>
+            <span>Defense:</span>
+            <span>Speed:</span>
+          </div>
+          <div class="respuestas">
+            <span>Pikachu</span>
+            <span>Electrico</span>
+            <span>35</span>
+            <span>55</span>
+            <span>40</span>
+            <span>90</span>
+          </div>
+        </div>
+        <div class="screen__btn"></div>
+        <div class="screen__hr"></div>
+      </div>
+    </div>
+    <div class="pokedexContainerBottom">
+      <div class="leftContainer">
+        <div class="buttonsTop">
+          <div class="buttonsTop__btn--big">
+            <i class='bx bx-refresh'></i>
+          </div>
+          <div class="buttonsTop__btn" id="search"><i class='bx bx-search-alt-2' ></i></div>
+          <div class="buttonsTop__btn"><i class='bx bx-x'></i></div>
+        </div>
+        <div class="buttonsBot">
+          <form action="#" id="textTarea">
+            <textarea name="" id="" cols="30" rows="10" >Busca un Pokemon Aqui !!! ♥</textarea>
+          </form>
+        </div>
+      </div>
+      <div class="rightContainer">
+        <div class="crucetaHorizontal">
+          <div class="crucetaVertical"></div>
+          <div class="circle"></div>
+          <div class="correccion"></div>
+        </div>
+      </div>
+    </div>
+  </div>  
+  <script src="app.js"></script>
+</body>
+</html>
