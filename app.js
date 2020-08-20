@@ -5,10 +5,25 @@ const searchPokemon = async pokemon => {
 }
 
 const searchBtn = document.getElementById('search')
-const texTarea = document.getElementById('texTarea')
+const form = document.getElementById('form')
+const text = form.firstElementChild
 
-searchBtn.addEventListener('click', () => {
-  const pokeSearch = textTarea.firstElementChild.innerHTML
-  console.log(pokeSearch)
+// searchBtn.addEventListener('click', () => {
+//   form.submit()
+//   const pokeSearch = form.firstElementChild.innerHTML
+
+//   console.log(pokeSearch)
+// })
+
+
+
+form.addEventListener('submit', e => {
+  e.preventDefault()
+  console.log(text.value)
+  text.value = '' 
 })
 
+searchBtn.addEventListener('click', () => {
+  console.log(text.value)
+  text.value = '' 
+})
