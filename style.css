@@ -155,7 +155,7 @@ body
   margin-top: 24px;
   border: 1px solid rgba(204, 204, 204, 0.7);
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-columns: 3fr 1fr 1fr;
   gap: 10px;
   justify-content: center;
   padding: 5px;
@@ -171,13 +171,13 @@ body
   left: 15%;
   position: absolute;
   background-color: white;
-  opacity: .2;
+  opacity: .3;
 }
 
 .screen--blue .datos, .screen--blue .respuestas 
 {
   align-self: center;
-  font-size: 11px;
+  font-size: 8px;
   display: flex;
   flex-direction: column;
   font-weight: bold;
@@ -304,9 +304,10 @@ body
 
 .buttonsBot form
 {
-  width: 76%;
+  width: 80%;
   height: 60px;
   margin: 0 auto;
+  margin-left: 27px;
 }
 
 .buttonsBot form input
@@ -440,4 +441,31 @@ body
   top: 2.5px;
   left: 2.5px;
   background: #404040;
+}
+
+.o-0
+{
+  opacity: 0;
+}
+
+#button__right
+{
+  width: 50%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  right: 0;
+  z-index: 10;
+  background: transparent;
+}
+
+#button__left
+{
+  width: 50%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 10;
+  background: transparent;
 }

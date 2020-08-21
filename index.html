@@ -21,8 +21,8 @@
       <div class="navbar"></div>
       <div class="screen">
         <div class="screen--blue">
-          <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/25.png" alt="Pokemon" id="">
-          <div class="datos">
+          <img src="" id="pokemon__img" class="o-0">
+          <div class="datos o-0" id="pokemon__datos">
             <span>Name:</span>
             <span>Type:</span>
             <span>Hp:</span>
@@ -30,13 +30,7 @@
             <span>Defense:</span>
             <span>Speed:</span>
           </div>
-          <div class="respuestas">
-            <span>Pikachu</span>
-            <span>Electrico</span>
-            <span>35</span>
-            <span>55</span>
-            <span>40</span>
-            <span>90</span>
+          <div class="respuestas" id="pokemon__stats">
           </div>
         </div>
         <div class="screen__btn"></div>
@@ -46,11 +40,11 @@
     <div class="pokedexContainerBottom">
       <div class="leftContainer">
         <div class="buttonsTop">
-          <div class="buttonsTop__btn--big">
+          <div class="buttonsTop__btn--big" id="btn__random">
             <i class='bx bx-refresh'></i>
           </div>
           <div class="buttonsTop__btn" id="search"><i class='bx bx-search-alt-2' ></i></div>
-          <div class="buttonsTop__btn"><i class='bx bx-x'></i></div>
+          <div class="buttonsTop__btn" id="delete"><i class='bx bx-x'></i></div>
         </div>
         <div class="buttonsBot">
           <form id="form">
@@ -61,6 +55,8 @@
       </div>
       <div class="rightContainer">
         <div class="crucetaHorizontal">
+          <div id="button__left"></div>
+          <div id="button__right"></div>
           <div class="crucetaVertical"></div>
           <div class="circle"></div>
           <div class="correccion"></div>
